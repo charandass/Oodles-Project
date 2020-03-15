@@ -1,0 +1,211 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    font-size:16px;
+}
+h1, h2,p {
+    margin:0;
+    padding: 0;
+}
+
+#header-container{
+    background-image: url("../assets/Rectangle 11.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding:1.5rem;
+}
+#header-container #nav-container {
+    max-width: 100%;
+    margin:0 auto;
+    border-radius: 0.8rem;
+
+}
+#header-container #nav-container a:hover{
+    color: #007bff;
+    border-bottom: 1px solid #007bff;
+}
+
+#header-container .banner-image-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    max-width: 100%;
+    margin:0 auto;
+    padding:2rem 2rem 8rem;
+}
+#header-container .banner-image-container .banner-tittle{
+    display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      color: white;
+      font-size: 4.5rem;
+      line-height: 4.2rem;
+}
+
+#our-services-container{
+    margin-top: -6.5rem;
+}
+
+#our-services-container .bitcoin-image {
+    max-width: 90%;
+    margin:0 auto;
+}
+#our-services-container .bitcoin-image div img:nth-child(1){
+    position: relative;
+    z-index: 1;
+}
+
+#our-services-container .bitcoin-image div img:nth-child(2){
+    margin-left: -20px;
+}
+#our-services-container .services-fetured-container{
+    padding:2rem;
+}
+#our-services-container .service-grid{
+    -webkit-transition: -webkit-transform .2s;
+    transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s, -webkit-transform .2s;
+}
+
+#our-services-container .service-grid:hover{
+    -webkit-transform:scale(1.09);
+    transform:scale(1.09);
+}
+#our-services-container .services-row-one{
+    max-width: 80%;
+    margin:0 auto;
+}
+#our-services-container .services-row-one div{
+    padding:2rem;
+}
+#our-services-container .services-row-one p{
+    margin:1rem;
+}
+#our-services-container .services-row-two{
+    max-width: 80%;
+    margin:0 auto;
+}
+#our-services-container .services-row-two div{
+    padding:2rem;
+}
+#our-services-container .services-row-two p{
+    margin:1rem;
+}
+
+#our-services-container .popup-service-container{
+    display:none;
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: 1;
+    padding-top:5rem;
+    overflow:auto;
+    height: 100%;
+    width: 100%;
+}
+#our-services-container .popup-service-container .popup-service-box{
+    max-width: 50%;
+    margin:auto;
+    padding:1rem;
+    border:1px solid silver;
+    border-radius: 0.5rem;
+    background-color: wheat;
+    color:black;
+}
+#our-services-container .popup-service-container .popup-service-box .remove-popup{
+    float: right;
+    color:red;
+    padding:0.5rem;
+    cursor: pointer;
+}
+#our-services-container .popup-service-container .popup-service-box h3{
+    padding-bottom: 1rem;
+}
+#trends-container{
+    background-image: url("../assets/4683.png");
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    padding:8rem;
+}
+#trends-container .slide-box div{
+    padding:3rem;
+}
+#trends-container .slide-box div p:nth-child(1){
+    font-size: 1rem;
+    margin: 0 3rem;
+}
+#trends-container .slide-box div p:nth-child(2){
+    font-size: 1rem;
+    margin: 0 4rem 4rem 4rem;
+}
+#trends-container .slide-box div p:nth-child(3){
+    font-size: 1rem;
+    margin: 0 3rem;
+}
+
+#trends-container .slide-box div img{
+    padding:1rem;
+}
+
+#footer-container{
+    background-image: url("../assets/Rectangle 13.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding:3rem 0rem;
+}
+#footer-container .footer-text-form-container{
+    max-width: 80%;
+    margin:0 auto;
+}
+#footer-container .footer-text{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display:flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction:column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size:1.5rem;
+    padding:1rem;
+
+}
+#footer-container .footer-form-container{
+    padding:0.5rem;
+}
+
+#footer-copyright{
+    margin:1rem 0 0 0;
+    padding:1rem;
+    background-color: #030406;
+    color:white;
+}
+
+@media screen and (max-width:800px){
+    .banner-image img{
+        display: none;
+    }
+    #trends-container {
+        display:none;
+    }
+}
